@@ -30,7 +30,7 @@ disqus:
   shortname: 'nathantreid'
   staging_shortname: 'nathantreid-staging'
 
-staging: true
+staging: false
 
 defaults:
   -
