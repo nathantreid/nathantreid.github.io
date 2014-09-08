@@ -3,22 +3,41 @@ markdown:         redcarpet
 highlighter:         pygments
 
 # Permalinks
-permalink:        pretty
+permalink:        '/:title'
 
 # Setup
-title:            Lanyon
-tagline:          'A Jekyll theme'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://lanyon.getpoole.com
+title:            Nathan Reid
+tagline:          'Life, Software, and the Pursuit of Everything'
+description:      'A blog about architecting solutions, developing software, and building dreams.'
+url:              http://nathantreid.com
+staging_url:      http://staging.nathantreid.com
 baseurl:          '/'
-paginate:         5
+paginate:         10
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Nathan Reid'
+  url:            https://twitter.com/nathantreid
 
 # Custom vars
 version:          1.0.0
 
-github:
-  repo:           https://github.com/poole/lanyon
+pages_list:
+  About: '/about/'
+  Archive: '/archive/'
+  Feed: '/atom.xml'
+
+disqus:
+  shortname: 'nathantreid'
+  staging_shortname: 'nathantreid-staging'
+
+staging: true
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'default'
+      comments: true
+
