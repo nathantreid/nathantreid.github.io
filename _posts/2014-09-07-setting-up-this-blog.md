@@ -5,7 +5,7 @@ title: Setting up this blog
 Getting Started
 ---
 I've been meaning to start a blog for a while now, if for no other reason than to have a place to collect my thoughts.
-Last night, with my wfie's encouragement, I decided to go for it. I was already pretty sure I wanted to run Jekyll - I run Wordpress for my wife, and although it runs well it's a bit too heavy for my tastes.
+Last night, with my wife's encouragement, I decided to go for it. I was already pretty sure I wanted to run Jekyll - I run Wordpress for my wife, and although it runs well it's a bit too heavy for my tastes.
 A little more digging into Jekyll and I was sold - simple, speedy sites, written in the text editor of my choice ([Sublime](http://www.sublimetext.com/3)!) or even online ([Dillinger](http://dillinger.io/)).
 The clincher was that I could easily host the site on GitHub for free.
 
