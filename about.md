@@ -10,7 +10,7 @@ In my teens I spent countless hours attempting to build a sentient AI (and faili
 
 I am addicted to learning, designing, and creating new things. This blog is intended to be an outlet for my thoughts - perhaps some will be brilliant; many others will likely be misguided. My goal is to at least learn from myself as I draft these articles, and hopefully to gain input from my readers as well.
 
-Most of my day is spent working with C#, Javascript, and SQL as I architect and develop web and mobile applications. In my personal "tech" time I focus on exploring new technologies and design patterns. My current overall focus is nodejs and Ionic/AngularJS.
+Most of my day is spent working with C#, Javascript, and SQL as I architect and develop web and mobile applications. In my personal "tech" time I focus on exploring new technologies and design patterns.
 
 As such, I expect it to largely be filled with technical content, although that may be interspersed with articles about my myriad other interests such as tiny houses, backyard chickens, and blacksmithing.
 
