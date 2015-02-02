@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   .masthead-title {
     text-align: center;
   }
-  .masthead-title small {
+  .masthead-title small:nth-child(n+4) {
     display: none;
   }
 }
