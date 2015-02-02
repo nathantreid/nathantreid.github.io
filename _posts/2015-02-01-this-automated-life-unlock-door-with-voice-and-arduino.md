@@ -4,7 +4,6 @@ title: This automated life: unlocking a door with your voice and Arduino
 
 This automated life: unlocking a door with your voice and Arduino
 ---
-
 Home automation is another long-time interest of mine. A few months ago, I decided to automate the locking/unlocking of our apartment door. I'd been looking for a good reason to get an Arduino, and this settled it. A quick search online turned up some other peoples experiences doing this, and away I went.
 
 Parts List:
