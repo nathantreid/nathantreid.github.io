@@ -121,6 +121,9 @@ h1, h2, h3, h4, h5, h6 {
   .masthead-title small:nth-child(n+4) {
     display: none;
   }
+  .tagline {
+    text-align: center;
+  }
 }
 
 
@@ -555,5 +558,4 @@ a.pagination-item:hover {
 .tagline {
   font-size: 70%;
   font-style: italic;
-  display: block;
 }
