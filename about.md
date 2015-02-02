@@ -12,6 +12,6 @@ I am addicted to learning, designing, and creating new things. This blog is inte
 
 Most of my day is spent working with C#, Javascript, and SQL as I architect and develop web and mobile applications. In my personal "tech" time I focus on exploring new technologies and design patterns.
 
-As such, I expect it to largely be filled with technical content, although that may be interspersed with articles about my myriad other interests such as tiny houses, backyard chickens, and blacksmithing.
+As such, I expect this blog to largely be filled with technical content, although that may be interspersed with articles about my myriad other interests such as tiny houses, backyard chickens, and blacksmithing.
 
 I spend my spare time hanging with my family, playing violin, developing games, exploring new technologies, watching Big Bang Theory, and running around the Austin trails barefoot.
