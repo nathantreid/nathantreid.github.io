@@ -33,6 +33,7 @@ The JavaScript compiler is included in the [nathantreid:css-modules](https://atm
 
 What does it look like? Here is an example:
 ***client/hello.mss***
+
 ``` css
 .hello {
     color: red;
@@ -41,6 +42,7 @@ What does it look like? Here is an example:
 ```
 
 ***client/b.mss***
+
 ``` css
 .b {
     font-weight: bold;
@@ -48,7 +50,8 @@ What does it look like? Here is an example:
 ```
 
 ***client/hello.js***
-``` js
+
+``` javascript
 import * as styles from "./hello.mss";
 
 Template.hello.helpers({
@@ -57,6 +60,7 @@ Template.hello.helpers({
 ```
 
 ***client/hello.html***
+
 ``` html
 <template name="hello">
   <button class="{{styles.hello}}">Click Me</button>
@@ -64,6 +68,7 @@ Template.hello.helpers({
 ```
 
 ***rendered HTML***
+
 ``` html
 <button class="_C_dev_meteor_css_modules_nathantreid_css_modules_test_client_hello__hello
 _C_dev_meteor_css_modules_nathantreid_css_modules_test_client_b__b">Click Me</button>
