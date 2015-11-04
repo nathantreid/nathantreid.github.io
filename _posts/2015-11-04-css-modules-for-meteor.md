@@ -32,6 +32,7 @@ The JavaScript compiler is included in the [nathantreid:css-modules](https://atm
 [nathantreid:css-modules-mss](https://atmospherejs.com/nathantreid/css-modules-mss) package instead.
 
 What does it look like? Here is an example:
+
 ***client/hello.mss***
 
 ``` css
