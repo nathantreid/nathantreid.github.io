@@ -4,8 +4,7 @@ title: CSS Modules for Meteor
 
 CSS Modules for Meteor
 ---
-
-**tl;dr: CSS modules are awesome - get the package here: [nathantreid:css-modules](https://atmospherejs.com/nathantreid/css-modules).**
+tl;dr: CSS modules are awesome - get the package here: [nathantreid:css-modules](https://atmospherejs.com/nathantreid/css-modules).
 
 CSS is great. It is a very powerful tool for styling web pages, but it some big issue, such as global scope.
 This wasn't such a big deal when CSS was created and websites were much smaller and less complex, but now that we have experienced the joy of maintaining large, complex web applications, the trend is towards further separation of components and more modular building blocks.
