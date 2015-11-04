@@ -78,6 +78,6 @@ _C_dev_meteor_css_modules_nathantreid_css_modules_test_client_b__b">Click Me</bu
 There you go: CSS with unique class names; no more worries about overlapping classes.
 
 For the record, I despise the current class names for being overly long, so that's my next target.
-I intend for the to start the path from the meteor app's root, so **_C_dev_meteor_css_modules_nathantreid_css_modules_test_client_hello__hello** would become **_client_hello__hello**.
+I intend for the to start the path from the meteor app's root, so **\_C\_dev\_meteor\_css\_modules\_nathantreid\_css\_modules\_test\_client\_hello\_\_hello** would become **\_client\_hello\_\_hello**.
 Also, I have not tested the package on Linux or Mac yet, but that should follow shortly.
 
