@@ -21,7 +21,7 @@ I'd say more about CSS Modules, but [Glen Maddern already does a terrific job](h
 After checking out CSS Modules and getting really excited for it, I looked for a way to use it with Meteor. I couldn't find any existing packages, and while I could probably make use of it via the meteor webpack package, I wanted to stick with straight Meteor, so this past weekend I dove into the Meteor build plugin API.
 I took the [basic CSS modules implementation](https://github.com/css-modules/css-modules-loader-core), the [fourseven:scss](https://atmospherejs.com/fourseven/scss) package, and the Build Plugin API docs, and went to work.
 
-I couldn't figure out how to debug Meteor build plugins, so I ended up using a lot of *console.log()*'s. Then I ran into an issue where Meteor stopped picking up on changes to my package. I restarted Meteor, removed the package, re-added it, changed the version, changed the name, renamed the folder, and finally rebooted my computer. Thankfully that resolved the issue, and it hasn't come back.
+I couldn't figure out how to debug Meteor build plugins, so I ended up using a lot of *console.log()*'s to figure things out. Then I ran into an issue where Meteor stopped picking up on changes to my package. I restarted Meteor, removed the package, re-added it, changed the version, changed the name, renamed the folder, and finally rebooted my computer. Thankfully that resolved the issue, and it hasn't come back.
 
 Eventually (this morning) I emerged from my Meteor build plugin pocket universe with my shiny new nathantreid:css-modules plugin.
 
