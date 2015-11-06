@@ -71,11 +71,10 @@ Template.hello.helpers({
 ***rendered HTML***
 
 ``` html
-<button class="_C_client_hello__hello _C_client_b__b">Click Me</button>
+<button class="_client_hello__hello _client_b__b">Click Me</button>
 ```
 
 There you go: CSS with unique class names; no more worries about overlapping classes.
-I plan to remove the _C from the beginning, but that's not a high priority right now.
 
-Please note that I have not tested the package on Linux or Mac yet, but that should follow shortly.
+The package has been tested on Windows and Mac. It has not yet been tested on Linux, but that should follow shortly.
 
