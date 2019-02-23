@@ -51,7 +51,7 @@ I simply popped open index.html, changed post.content to post.excerpt, and added
 
 Disqus Comments
 ---
-I'd integrated Disqus with my wife's Wordpress, but that pretty much plug and play. Getting set up for my local Jekyll required a little more work.
+I'd integrated Disqus with my wife's Wordpress, but that was pretty much plug and play. Getting set up for my local Jekyll required a little more work.
 I copied the Disqus configuration variables script into _includes/comments.html, added a condition to easily enable or disable comments on a per post basis, and customized the variables:
 
 ```html
@@ -84,7 +84,7 @@ I copied the Disqus configuration variables script into _includes/comments.html,
 {% endraw %}
 ```
 
-I wanted to test Disqus in staging environment, so I enabled swapping out the shortname and url variables depending on whether I had staging enabled or not.
+I wanted to test Disqus in a staging environment, so I enabled swapping out the shortname and url variables depending on whether I had staging enabled or not.
 I then added those fields to _config.yml:
 
 ```yaml
