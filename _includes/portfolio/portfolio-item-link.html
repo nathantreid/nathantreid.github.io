@@ -1,0 +1,10 @@
+{% assign url = include.url %}
+{% if url contains "https://github.com" %}
+  <a href="{{ url }}"
+    class="portfolio-item-link-github"
+    ></a>
+{% elsif url contains "https://www.go2works.com" %}
+  <a href="{{ url }}"
+    class="portfolio-item-link-go2"
+    >GO2</a>
+{% endif %}

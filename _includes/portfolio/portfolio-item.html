@@ -1,0 +1,10 @@
+{% assign item = include.item %}
+<div class="portfolio-item">
+  <div class="portfolio-item-title">
+    {{ item.title }}
+    {% include portfolio/portfolio-item-link.html url=item.url %}
+  </div>
+  <p class="portfolio-item-blurb">
+    {{ item.blurb }}
+  </p>
+</div>

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+
+portfolio: 
+  - title: Build Tools
+    items: 
+      - title: nathantreid:css-modules
+        url: https://github.com/nathantreid/meteor-css-modules
+        blurb: A build plugin for Meteor.js that enables the use of CSS modules in CSS, Sass, Less, and Stylus files.
+  - title: Client Work
+    items:
+      - title: Assembly Presentation Builder
+        url: https://www.go2works.com/portfolio-item/assembly-presentation-builder/
+        blurb: A question driven presentation builder enabling corporate users to quickly create customized presentations within the company-provided template.
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% for section in page.portfolio %}
+    {{ section.title}}
+    {% for item in section.items %}
+      {% include portfolio/portfolio-item.html item=item %}
+    {% endfor %}
+  {% endfor %}
+</div>
