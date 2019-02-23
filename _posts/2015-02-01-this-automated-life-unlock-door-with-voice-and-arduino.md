@@ -1,5 +1,5 @@
 ---
-title: This automated life: unlocking a door with your voice and Arduino
+title: "This automated life: unlocking a door with your voice and Arduino"
 ---
 
 This automated life: unlocking a door with your voice and Arduino

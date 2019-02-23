@@ -1,6 +1,13 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:         pygments
+gems: [jekyll-paginate]
+highlighter:      rouge
+markdown:         kramdown
+
+# Plugin Config
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        '/:title'
@@ -40,4 +47,3 @@ defaults:
     values:
       layout: 'default'
       comments: true
-
