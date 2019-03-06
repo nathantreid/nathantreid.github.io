@@ -1,0 +1,33 @@
+{% assign project = include.project %}
+<div class="portfolio-project panel">
+  <div class="portfolio-project-header">
+    {% if project.urls %}
+      <div><a class="portfolio-project-title {{ project.titleCssClass }}" href="{{ project.urls[0] }}">{{ project.title }}</a></div>
+    {% else %}
+      <span class="portfolio-project-title">{{ project.title }}</span>
+    {% endif %}
+    {% include portfolio/portfolio-project-link.html urls=project.urls company=project.company %}
+  </div>
+  <div class="portfolio-project-role">
+    {{ project.role }}
+  </div>
+  <p class="portfolio-project-blurb font-dejavu">
+    {{ project.blurb }}
+  </p>
+  {% if project.challenges %}
+  <div class="portfolio-project-challenges font-dejavu">
+    <div>Challenges</div>
+    <p>{{ project.challenges }}</p>
+  </div>
+  {% endif %}
+  {% if project.stack %}
+  <div class="portfolio-project-tech-stack font-dejavu">
+    <div>Tech Stack</div>
+    <ul>
+    {% for entry in project.stack %}
+      <li>{{ entry }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,21 @@
+{% assign company = include.company %}
+{% assign url = include.url %}
+{% if include.urls %}
+{% for url in include.urls %}
+    {% if url contains "https://github.com" %}
+      <a href="{{ url }}"
+        class="portfolio-project-link-github icon-link"
+        ></a>
+    {% elsif url contains "https://atmospherejs.com" %}
+      <a href="{{ url }}"
+        class="portfolio-project-link-atmosphere icon-link"
+        ><img src="/images/meteor.png" alt="Atmosphere"></a>
+    {% elsif url contains "https://www.go2works.com" or company == "GO2" %}
+      <a href="{{ url }}"
+        class="portfolio-project-link-go2 icon-link"
+        ></a>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <div class="portfolio-project-link-go2 icon-link"></div>
+{% endif %}

@@ -1,0 +1,119 @@
+.portfolio-skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  h1 {
+    font-family: "PT Sans";
+    font-size: 1rem;
+    margin-top: 0;
+    padding-left: 1rem;
+  }
+
+  sub {
+    display: block;
+    font-size: 0.6rem;
+  }
+
+  ul {
+    font-size: 0.7rem;
+    padding-left: 2rem;
+  }
+
+  .portfollio-skills-section {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 150px;
+
+    @media(max-width: 895px) {
+      min-width: 201px;
+    }
+
+    @media(max-width:607px) {
+      min-width: 201px;
+    }
+
+    @media(max-width: 433px) {
+      min-width: 151px;
+    }
+  }
+
+
+  .portfolio-button-flat {
+    border: none;
+  }
+
+  .portfolio-skills-additional {
+    display: none;
+    margin-top: -1rem;
+  }
+
+  .portfolio-skill-level {
+    border-bottom: 2px solid;
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+
+    &.level-1,
+    &.level-2,
+    &.level-3 {
+      border-color: $red;
+    }
+
+    &.level-4,
+    &.level-5,
+    &.level-6 {
+      border-color: $yellow;
+    }
+
+    &.level-7,
+    &.level-8,
+    &.level-9,
+    &.level-10 {
+      border-color: $green;
+    }
+
+    &.level-1 {
+      width: 10%;
+    }
+
+    &.level-2 {
+      width: 20%;
+    }
+
+    &.level-3 {
+      width: 30%;
+    }
+
+    &.level-4 {
+      width: 40%;
+    }
+
+    &.level-5 {
+      width: 50%;
+    }
+
+    &.level-6 {
+      width: 60%;
+    }
+
+    &.level-7 {
+      width: 70%;
+    }
+
+    &.level-8 {
+      width: 80%;
+    }
+
+    &.level-9 {
+      width: 90%;
+    }
+
+    &.level-10 {
+      width: 100%;
+    }
+
+
+  }
+
+}

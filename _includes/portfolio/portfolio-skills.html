@@ -1,0 +1,78 @@
+{% assign skills = include.skills %}
+<h1 class="portfolio-section-header">How I do it</h1>
+<div class="portfolio-skills font-dejavu">
+  <div class="portfollio-skills-section">
+    <h1>
+      Languages
+      <sub>Developed With</sub>
+    </h1>
+    <ul>
+      {% for entry in skills.languages %}
+      <li>{{ entry.name }}<div class="portfolio-skill-level level-{{entry.level}}"></div></li>
+      {% endfor %}
+      <li><button id="portoflio-skills-languages-more" class="portfolio-button-flat">see more</button></li>
+    </ul>
+    <ul id="portfolio-additional-languages" class="portfolio-skills-additional">
+      {% for entry in skills.additionalLanguages %}
+      <li>{{ entry.name }}<div class="portfolio-skill-level level-{{entry.level}}"></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="portfollio-skills-section">
+    <h1>
+      Frameworks
+      <sub>Developed With</sub>
+    </h1>
+    <ul>
+      {% for entry in skills.frameworksAndEnvironments %}
+      <li>{{ entry.name }}<div class="portfolio-skill-level level-{{entry.level}}"></div></li>
+      {% endfor %}
+      <li><button id="portoflio-skills-frameworks-more" class="portfolio-button-flat">see more</button></li>
+    </ul>
+    <ul id="portfolio-additional-frameworks" class="portfolio-skills-additional">
+      {% for entry in skills.additionalFrameworks %}
+      <li>{{ entry.name }}<div class="portfolio-skill-level level-{{entry.level}}"></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="portfollio-skills-section">
+    <h1>
+      Databases
+      <sub>Administered and Developed With</sub>
+    </h1>
+    <ul>
+      {% for entry in skills.databases %}
+      <li>{{ entry.name }}<div class="portfolio-skill-level level-{{entry.level}}"></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="portfollio-skills-section">
+    <h1>
+      Tools
+      <sub>Administered and Developed With</sub>
+    </h1>
+    <ul>
+      {% for entry in skills.tools %}
+      <li>{{ entry.name }}<div class="portfolio-skill-level level-{{entry.level}}"></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<script>
+function handleAdditionalSection(section) {
+  var moreButton = document.getElementById(`portoflio-skills-${section}-more`);
+  var additionalLanguagesList = document.getElementById(`portfolio-additional-${section}`);
+  moreButton.addEventListener('click', function() {
+    if (moreButton.textContent === 'see more') {
+      additionalLanguagesList.style.display = 'block';
+      moreButton.textContent = 'see less';
+      return;
+    }
+
+    additionalLanguagesList.style.display = 'none';
+    moreButton.textContent = 'see more';
+  });
+}
+handleAdditionalSection('languages');
+handleAdditionalSection('frameworks');
+</script>

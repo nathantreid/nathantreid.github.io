@@ -1,0 +1,106 @@
+$portfolio-project-width: 0;
+
+.portfolio-projects-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-project {
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 307px;
+  padding: 15px;
+
+  @media (max-width: 1023px) {
+    min-width: 400px;
+  }
+
+  @media (max-width: 895px) {
+    min-width: unset;
+    max-width: 280px;
+  }
+
+  @media (max-width: 639px) {
+    min-width: unset;
+    max-width: 100%;
+  }
+}
+
+.portfolio-project-header {
+  color: $blue;
+  display: flex;
+  font-weight: bold;
+
+  .icon-link {
+    margin-left: 5px;
+
+    &:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+}
+
+.portfolio-project-title {
+  &.smaller {
+    font-size: 0.9rem;
+  }
+}
+
+.portfolio-project-blurb {
+  font-size: 0.7rem;
+}
+
+.portfolio-project-challenges {
+  font-size: 0.7rem;
+
+  > div {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+
+.portfolio-project-link-github {
+  background-image: url(/images/github-mark.png);
+  background-size: contain;
+  display: inline-block;
+  height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+
+.portfolio-project-link-atmosphere {
+  background-image: url(/images/meteor.png);
+  background-size: contain;
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.portfolio-project-link-go2 {
+  background-image: url(/images/GO2.svg);
+  background-size: contain;
+  display: inline-block;
+  height: 24px;
+  min-width: 56.36px;
+  width: 56.36px;
+}
+
+.portfolio-project-role {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+  margin-top: -0.3rem;
+}
+
+.portfolio-project-tech-stack {
+  >div {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  >ul {
+    font-size: 0.7rem;
+    padding-left: 1.5rem;
+  }
+}

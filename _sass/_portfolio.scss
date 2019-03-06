@@ -1,0 +1,24 @@
+@import 'solarized/variables';
+
+@import './portfolioIntro';
+@import './portfolioProject';
+@import './portfolioSkills';
+
+.portfolio {
+  font-family: "PT Sans";
+
+  .page-title {
+    text-align: center;
+  }
+}
+
+.portfolio-section-header {
+  // text-align: center;
+  font-family: "PT Sans";
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.portfolio-section-projects-header {
+  font-size: 1rem;
+}

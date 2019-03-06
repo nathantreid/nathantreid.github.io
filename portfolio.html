@@ -1,0 +1,197 @@
+---
+layout: default
+#theme: solarized-light
+title: Portfolio
+permalink: /portfolio/
+
+portfolio:
+  - title: Open Source Projects
+    blurb: Sampling of projects I have created or contributed to
+    projects:
+      - title: akryum:vue-component
+        urls:
+          - https://atmospherejs.com/akryum/vue-component
+          - https://github.com/meteor-vue/vue-meteor
+        blurb: A Meteor.js build plugin that transpiles TypeScript using Babel.
+        role: Contributor
+      - title: nathantreid:css-modules
+        urls:
+          - https://atmospherejs.com/nathantreid/css-modules
+          - https://github.com/nathantreid/meteor-css-modules
+        blurb: A Meteor.js build plugin that enables the use of CSS modules in CSS, Sass, Less, and Stylus files.
+        role: Author
+      - title: nathantreid:static-assets
+        urls:
+          - https://atmospherejs.com/nathantreid/static-assets
+          - https://github.com/nathantreid/meteor-static-assets
+        blurb: A Meteor.js build plugin that enables importing of static-assets such as images into JavaScript files.
+        role: Author
+      - title: nathantreid:typescript-babel
+        titleCssClass: 'smaller'
+        urls:
+          - https://atmospherejs.com/nathantreid/typescript-babel
+          - https://github.com/nathantreid/meteor-typescript-babel
+        blurb: A Meteor.js build plugin that transpiles TypeScript using Babel.
+        role: Author
+  - title: Client Projects
+    blurb: A sampling of client projects I built.
+    projects:
+      - title: Hooked
+        urls:
+          - https://hookedapp.com/
+        company: GO2
+        blurb: A food and drink deals app targeted at college students with over 300,000 daily active users.
+        challenges: Optimizing the data structure and queries to scale with the app's growth.
+        role: Architect / Lead Developer / DBA
+        stack:
+          - ASP.NET Web API
+          - SQL Server Azure
+          - Azure Cloud Services
+          - Azure CDN
+          - Native IOS and Android apps (I was not directly involved with the apps)
+      - title: Assembly Presentation Builder
+        urls:
+          - https://www.go2works.com/portfolio-item/assembly-presentation-builder/
+        company: GO2
+        blurb: A question driven presentation builder enabling employees to quickly create customized presentations within the company-provided template.
+        challenges: Internal PDF generation microservice, Nested question structure where questions have 0-to-many parents and 0-to-many children.
+        role: Architect / Lead Developer / DBA
+        stack:
+          - Vue.js
+          - Node.js / Meteor.js / Express
+          - ASP.NET Web Api
+          - MongoDB
+          - AWS S3 file hosting
+          - Docker Swarm
+      - title: Sherwin-Williams VITL Resource Library
+        urls:
+          - https://www.swvitl.com/
+        company: GO2
+        blurb: A public resource library providing datasheets and other resources for Sherwin-Williams reps.
+        challenges: Integration with FedEx printing API to enable printing from the browser.
+        role: Architect / Lead Developer / DBA
+        stack:
+          - Vue.js
+          - Node.js / Meteor.js / Express
+          - MongoDB
+          - AWS S3 file hosting
+          - Docker Swarm
+      - title: Comcast Nucleus
+        urls:
+          - https://www.go2works.com/portfolio-item/nucleus/
+        company: GO2
+        blurb: An internal asset management solution for Comcast Business employees.
+        challenges: Comcast SAML SSO integration.
+        role: Architect / Lead Developer / DBA
+        stack:
+          - Meteor.js
+          - Node.js / Express
+          - MongoDB
+          - AWS S3 file hosting
+          - Docker Swarm
+      - title: eStatements / View-A-Bill
+        company: GO2
+        blurb: Electronic statement hosting for millions of customer statements for a number of cable companies including Time Warner Cable.
+        challenges: Multi-threaded statement file processing, optimizing for both efficient statement storage and high performance retrieval, load balancing for high availability.
+        role: Architect / Lead Developer / DBA
+        stack:
+          - ASP.NET
+          - C#/.NET Windows Services
+          - MySQL
+skills:
+  languages:
+    - name: JavaScript
+      level: 10
+    - name: TypeScript
+      level: 10
+    - name: C#
+      level: 9
+    - name: HTML
+      level: 9
+    - name: CSS / SCSS
+      level: 9
+    - name: Bash
+      level: 7
+  additionalLanguages:
+    - name: Liquid
+      level: 5
+    - name: VB.NET
+      level: 3
+    - name: PHP
+      level: 3
+    - name: Perl
+      level: 3
+    - name: C++
+      level: 2
+    - name: ColdFusion
+      level: 2
+  frameworksAndEnvironments:
+    - name: Vue.js
+      level: 10
+    - name: Meteor.js
+      level: 10
+    - name: Node.js
+      level: 10
+    - name: ASP.NET
+      level: 8
+    - name: Knockout.js
+      level: 7
+  additionalFrameworks:
+    - name: React
+      level: 3
+  databases:
+    - name: MongoDB
+      level: 10
+    - name: MySQL
+      level: 8
+    - name: MS SQL Azure
+      level: 7
+    - name: MS SQL Server
+      level: 5
+    - name: PostgreSQL
+      level: 4
+  tools:
+    - name: Docker Swarm
+      blurb: Cluster of Docker servers
+      level: 9
+    - name: TeamCity
+      blurb: Automated builds
+      level: 10
+    - name: Octopus Deploy
+      blurb: Automated deployments
+      level: 10
+    - name: Confluence
+      blurb: Wiki / documentation
+      level: 10
+    - name: JIRA
+      blurb: Project/Issue tracker
+      level: 10
+    - name: Bitbucket Server
+      blurb: Git server
+      level: 10
+    - name: Nginx
+      blurb: Web server
+      level: 8
+    - name: IIS
+      blurb: Web server
+      level: 8
+    - name: Traefik
+      blurb: Web server
+      level: 8
+---
+
+<div class="page portfolio">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% include portfolio/portfolio-intro.html %}
+  {% include portfolio/portfolio-skills.html skills=page.skills %}
+
+  <h1 class="portfolio-section-header">Things I've Done</h1>
+  {% for section in page.portfolio %}
+    <h2 class="portfolio-section-projects-header">{{ section.title}}</h2>
+    <div class="portfolio-projects-section">
+    {% for project in section.projects %}
+      {% include portfolio/portfolio-project.html project=project %}
+    {% endfor %}
+    </div>
+  {% endfor %}
+</div>

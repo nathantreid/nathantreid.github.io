@@ -1,0 +1,28 @@
+.portfolio-intro {
+  display: flex;
+  flex-wrap: wrap;
+
+  .portfolio-intro-avatar {
+    margin-left: auto;
+    max-width: 150px;
+  }
+
+  h1 {
+    font-family: "PT Sans";
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+
+  ul {
+    font-size: 0.7rem;
+    padding-left: 2rem;
+  }
+
+
+  @media(max-width: 607px) {
+    .portfolio-intro-avatar {
+      margin: auto;
+      order: -1;
+    }
+  }
+}
