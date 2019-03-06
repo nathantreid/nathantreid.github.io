@@ -1,7 +1,7 @@
 # Dependencies
-gems: [jekyll-paginate]
 highlighter:      rouge
 markdown:         kramdown
+plugins: [jekyll-paginate]
 
 # Plugin Config
 kramdown:
